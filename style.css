@@ -5,25 +5,25 @@
 
 /* header section start */
 
-header{
+header {
     background-image: url("images/header-bg.png");
     background-size: cover;
     height: 90vh;
     background-position: 0 bottom;
 }
 
-.brandnamelogo{
+.brandnamelogo {
     width: 80.13px;
     height: 25.346px;
     margin-top: 30px;
     margin-left: -380px;
 }
 
-.headerbtn{
+.headerbtn {
     height: 46px;
 }
 
-.homeline{
+.homeline {
     background: #DF6951;
     width: 30px;
     height: 3px;
@@ -32,32 +32,40 @@ header{
     margin-top: -6px;
 }
 
-.header-content{
+.header-content {
     margin-top: 130px;
     width: 46ch;
 }
 
 .header-search {
-    width: 630px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10;
+    padding: 0;
+    justify-content: center;
+    max-width: 630px;
     align-items: center;
     border-radius: 5.224px;
     background: rgba(243, 243, 243, 0.60);
     backdrop-filter: blur(8.760618px);
 }
-.header-search *{
+
+.header-search * {
     margin: 0 20px;
 }
 
-.submitbtn{
+.submitbtn {
     height: 40px;
     width: 150px;
     margin-right: -10px;
 }
 
-.header-search p{
+
+.header-search p {
     position: relative;
 }
-.header-search p::after{
+
+.header-search p::after {
     content: " ";
     position: absolute;
     display: block;
@@ -68,20 +76,23 @@ header{
     border-radius: 25px;
     background: #D0D0D0;
 }
-.header-search p:nth-child(3)::after{
+
+.header-search p:nth-child(3)::after {
     display: none;
 }
 
 /* header end */
 
-.brand-container{
+.brand-container {
     background-color: #F7F7F7;
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
-    height: 15%;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
+
+
 /* Category section start */
 .main-container {
     width: 65%;
@@ -93,6 +104,7 @@ header{
     font-family: Poppins;
     font-size: 18px;
 }
+
 .we-offer {
     color: #181E4B;
     text-align: center;
@@ -105,12 +117,10 @@ header{
 }
 
 
-.category-col {
-    max-width: 200px;
-    max-height: 220px;
-}
 
-.category-col, .category-title, .category-slogan {
+.category-col,
+.category-title,
+.category-slogan {
     font-size: 16px;
 }
 
@@ -139,6 +149,10 @@ header{
     background: #C4C4C4;
     box-shadow: 2px 2px 9px black;
     max-height: 550px;
+    overflow: hidden;
+    width: 90%;
+    text-align: center;
+   
 }
 
 .ep1 {
@@ -148,6 +162,7 @@ header{
     left: 200px;
     margin-top: -50px;
 }
+
 .ep2 {
     height: 230px;
     width: 230px;
@@ -155,6 +170,7 @@ header{
     left: 70px;
     margin-top: 120px;
 }
+
 .ep3 {
     height: 170px;
     width: 170px;
